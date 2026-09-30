@@ -1,0 +1,16 @@
+# 1. Ignore Node.js dependencies in ANY folder or subfolder
+**/node_modules/
+
+# 2. Ignore environment variables/secrets in ANY folder
+**/.env
+**/.env.local
+**/.env.*.local
+
+# 3. Optional: Ignore build or distribution outputs if you generate them later
+**/dist/
+**/build/
+
+# 4. Optional: System files
+.DS_Store
+Thumbs.db
+
