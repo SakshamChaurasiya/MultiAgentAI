@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Home from './pages/Home'
 import getCurrentUser from "./features/getCurrentUser";
 import { useDispatch } from 'react-redux';
-import { setUserData } from './redux/userSlice';
+import { setUserdata } from './redux/userSlice';
 
 function App() {
   const dispatch = useDispatch()
@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const getUser = async () => {
       const data = await getCurrentUser()
-      dispatch(setUserData(data));
+      dispatch(setUserdata(data));
     }
     getUser()
   }, [])
